@@ -1,93 +1,100 @@
-/* Basic CSS for the navigation bar */
-
-*{
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-nav {
-    background-color: #f0f0f0;
-    padding: 20px;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #0C1F1E, #4B4B48);
+    color: #fff;
+}
+
+.logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
-  }
-  
-  nav ul {
-    list-style-type: none;
-    /* padding: 0; */
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* Basic CSS for the form elements */
-  body {
-    font-family: Arial, sans-serif;
-    /* margin: 20px; */
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  div {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: inline-block;
-    width: 100px;
-  }
-  
-  input[type="text"],
-  input[type="number"],
-  select {
-    width: 200px;
-    padding: 5px;
-  }
-  
-  button {
-    padding: 7px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Basic CSS for the report section */
-  h2 {
-    margin-top: 30px;
-  }
-  
-  #report,#result {
-    padding: 10px;
-    max-width: 400px;
-    word-wrap: break-word;
-  }
-#result{
-  height: 400px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
+    color: #fff;
 }
-  #result img{
+
+.logo img {
+    width: 40px; /* Kích thước logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #008080; /* Màu hover cho các link */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 20px 0 0 20px;
     width: 200px;
-    height: 100px;
-  }
-  
+    font-size: 14px;
+}
+
+.search-container input::placeholder{
+    color: #008080;
+}
+
+.search-container .search-button,
+.search-container .clear-button {
+    background-color: #008080; /* Màu nút Search */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* .search-container .clear-button {
+    background-color: #87CEEB; 
+} */
+
+.search-container img {
+    width: 20px;
+    height: auto;
+}
+
+.search-container .search-button:hover,
+.search-container .clear-button:hover {
+    background-color: #005959; /* Màu khi hover nút */
+}
