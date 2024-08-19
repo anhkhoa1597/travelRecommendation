@@ -62,50 +62,6 @@ body {
     color: #01bc4c; /* Màu hover cho các link */
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 5px 10px;
-    position: absolute;
-    right: 3px;
-}
-
-.search-container input {
-    border: none;
-    outline: none;
-    padding: 5px 10px;
-    border-radius: 20px 0 0 20px;
-    width: 200px;
-    font-size: 14px;
-}
-
-.search-container input::placeholder{
-    color: #008a37b3;
-}
-
-.search-container .search-button,
-.search-container .clear-button {
-    background-color: #008937b3; /* Màu nút Search */
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 5px;
-}
-
-.search-container img {
-    width: 20px;
-    height: auto;
-}
-
-.search-container .search-button:hover,
-.search-container .clear-button:hover {
-    background-color: #003f19b3; /* Màu khi hover nút */
-}
-
 /* container */
 .container {
     flex-grow: 1;
