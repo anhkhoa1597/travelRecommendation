@@ -3,11 +3,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 3px;
     background: linear-gradient(to right, #0C1F1E, #4B4B48);
     color: #fff;
 }
@@ -50,7 +56,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #008080; /* Màu hover cho các link */
+    color: #01bc4c; /* Màu hover cho các link */
 }
 
 .search-container {
@@ -71,12 +77,12 @@ body {
 }
 
 .search-container input::placeholder{
-    color: #008080;
+    color: #008a37b3;
 }
 
 .search-container .search-button,
 .search-container .clear-button {
-    background-color: #008080; /* Màu nút Search */
+    background-color: #008937b3; /* Màu nút Search */
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -85,10 +91,6 @@ body {
     margin-left: 5px;
 }
 
-/* .search-container .clear-button {
-    background-color: #87CEEB; 
-} */
-
 .search-container img {
     width: 20px;
     height: auto;
@@ -96,5 +98,86 @@ body {
 
 .search-container .search-button:hover,
 .search-container .clear-button:hover {
-    background-color: #005959; /* Màu khi hover nút */
+    background-color: #003f19b3; /* Màu khi hover nút */
+}
+
+/* container */
+.container {
+    flex-grow: 1;
+    background-image: linear-gradient(to right,#008937b3, rgba(223, 223, 223, 0)), url(./src/home-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    color: #fff;
+}
+
+.vertical-line {
+    height: 200px;
+    /* margin: 30px 20px; */
+    width: 1px;
+    background-color: white;
+}
+
+.list-social-media-icon{
+    list-style: none;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.list-social-media-icon li{
+    margin: 12px 0;
+}
+.icon {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.icon:hover {
+    filter: invert(54%) sepia(94%) saturate(2431%) hue-rotate(107deg) brightness(93%) contrast(99%); /* Màu khi hover */
+}
+
+.social-media-icon {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    align-items: center;
+    padding: 30px 15px 0;
+}
+
+.introduce {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.introduce button{
+    background-color: #008937b3; /* Màu nút Search */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    width:fit-content;
+}
+
+.introduce button:hover{
+    background-color: #003f19b3; /* Màu khi hover nút */
 }
