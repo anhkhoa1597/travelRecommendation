@@ -9,6 +9,7 @@ body {
     height: 100vh;
 }
 
+/* navigate bar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -73,6 +74,7 @@ body {
     color: #fff;
 }
 
+/*social media icon*/
 .vertical-line {
     height: 200px;
     /* margin: 30px 20px; */
@@ -105,40 +107,90 @@ body {
     padding: 30px 15px 0;
 }
 
+
+/* content */
 .introduce {
-    max-width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding-left: 50px;
 }
 
-h1 {
-    font-size: 60px;
+.introduce-h1 {
+    font-size: 50px;
     line-height: 1.2;
-    margin: 0 0 20px 0;
+    /* margin: 0 0 20px 0; */
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 20px;
 }
 
-p {
-    font-size: 16px;
+.introduce-p {
+    background-color: #00000050;
+    font-size: 13px;
     line-height: 1.5;
-    margin-bottom: 30px;
+    padding: 20px;
+    margin: 0 30px 0px 10px;
 }
 
-.introduce button{
+.our-team {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+.our-team-h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0 100px 0 0;
+}
+
+.our-team-member {
+    margin-left: 20px;
+    background-color: #00000050;
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.our-team-member img{
+    width: 24px;
+    height: 24px;
+}
+
+.our-team-member-name {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.our-team-member-name h2 {
+    font-size: 13px;
+    margin: 0;
+}
+
+.our-team-member-name span{
+    font-size: 12px;
+    color: #ffffff90;
+    margin: 10px 0;
+}
+
+button{
     background-color: #008937b3; /* Màu nút Search */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+    color: #ffffff;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.5px;
+    padding: 5px 0px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
-    width:fit-content;
+    width: fit-content;
+    width: 100%;
 }
 
-.introduce button:hover{
+button:hover{
     background-color: #003f19b3; /* Màu khi hover nút */
 }
