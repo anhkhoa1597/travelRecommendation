@@ -186,3 +186,41 @@ p {
 .introduce button:hover{
     background-color: #003f19b3; /* Màu khi hover nút */
 }
+
+/* travel recommendation */
+.travel-recommendation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 50px;
+}
+
+.location{
+    background-color: red;
+    max-width: 400px;
+    /* border-radius: 10px; */
+    margin: 10px 0;
+}
+
+.location img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    margin: 0;
+    background-color: white;
+}
+.content h3{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.content p{
+    color: black;
+    margin: 0;
+    padding: 0;
+}
