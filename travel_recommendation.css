@@ -197,7 +197,7 @@ p {
 }
 
 .location{
-    background-color: red;
+    background-color: gray;
     max-width: 500px;
     border-radius: 10px;
     overflow: hidden;
